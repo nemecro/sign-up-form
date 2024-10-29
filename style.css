@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'air_america';
-    src: url('fonts/airamerica-regular.woff2') format('woff2'),
-         url('fonts/airamerica-regular.woff') format('woff');
+    font-family: 'dj_gross';
+    src: url('fonts/djgross-webfont.woff2') format('woff2'),
+         url('fonts/djgross-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -12,6 +12,8 @@
 }
 
 h1 {
-    color: red;
-    font-family: 'air_america';
+    font-size: 48px;
+    color: black;
+    font-family: 'dj_gross';
 }
+
