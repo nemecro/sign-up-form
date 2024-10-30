@@ -24,7 +24,7 @@ body {
 
 #left-sidebar {
     min-height: 100vh;
-    flex: 1 0 400px;
+    flex: 1 0 375px;
 
     background-image: url(images/background.png);
     background-size: cover;
@@ -54,19 +54,18 @@ body {
 }
 
 main {
-    padding: 50px;
     height: 100vh;
     flex: 3 0 600px;
 }
 
-form {
-
+#form-heading {
+    margin: 10px 0;
 }
 
 .form-body {
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    margin: 10px 0px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    padding: 25px 25px;
+    margin: 10px 5px;
 
     display: flex;
     flex-direction: column;
@@ -75,11 +74,65 @@ form {
 
 .form-row {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
 
 }
 
 .form-col {
     display: flex;
     flex-direction: column;
+}
+
+label {
+    font-variant: small-caps;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+input {
+    font-size: 1.25rem;
+    border-radius: 3px;
+    outline: 1px solid rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+input:invalid {
+    outline: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+input:focus {
+    outline: 1px solid rgba(0, 0, 255, 0.7);
+}
+
+.legend {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+main header {
+    padding: 25px;
+}
+
+form button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    cursor: pointer;
+    margin: 10px 25px;
+    padding: 15px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.7);
+    border: none;
+    border-radius: 6px;
+}
+
+form button:hover {
+    transition: 0.25s;
+    background-color: rgba(0, 0, 255, 1);
+}
+
+.logo-small {
+    width: 3rem;
 }
